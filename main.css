@@ -1,0 +1,117 @@
+/* DESIGN STYLES */
+
+body {
+	box-sizing: border-box;
+	font-size: 24px;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+header {
+	text-align: center;
+	padding: 2em 0;
+}
+
+header .logo {
+	width: 8.5em;
+}
+
+.card-container {
+	margin-bottom: 2em;
+}
+
+.product {
+	background-color: #fcfcfc;
+	padding: 2em 0;
+	position: relative;
+}
+
+.product img {
+	margin: auto;
+	display: block;
+}
+
+.release-date {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	font-family: 'Tungsten', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+}
+
+.release-date--month {
+	display: block;
+	font-size: 1.5em;
+	letter-spacing: 0.2em;
+	line-height: 0.5em;
+}
+
+.release-date--day {
+	display: block;
+	font-size: 3em;
+	letter-spacing: 0.1em;
+}
+
+.product-name {
+	font-family: 'Vitesse', serif;
+	font-weight: 700;
+	text-align: center;
+}
+
+.product-brand {
+	font-family: 'Vitesse', serif;
+	text-align: center;
+	color: #777;
+	margin-top: -0.5em;
+}
+
+.carousel-cell {
+	width: 100%;
+}
+
+.carousel-cell img {
+	width: 80%;
+	display: block;
+	margin: auto;
+}
+
+.product-detail h2 {
+	font-size: 1.50em;
+	margin: 2em 0 1em;
+}
+
+.product-detail h3 {
+	font-size: 1.125em;
+	margin-bottom: 1em;
+}
+
+.product-detail h4 {
+	text-align: center;
+	font-family: 'Tungsten', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	margin-bottom: 2em;
+}
+
+.product-detail p {
+	font-family: 'Vitesse', serif;
+}
+
+/* ANIMATIONS POWERED SWUP JS */
+
+.transition-fade {
+	transition: 500ms;
+	opacity: 1;
+	transform: none;
+}
+
+html.is-animating .transition-fade {
+	opacity: 0;
+	transform: translate3d(-100%, 0, 0);
+}
